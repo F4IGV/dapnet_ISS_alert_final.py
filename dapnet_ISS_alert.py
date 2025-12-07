@@ -34,14 +34,14 @@ LOG_FILE = os.path.join(SCRIPT_DIR, "iss_debug.log")
 # =====================================================
 DAPNET_USER = "YourCall"
 DAPNET_PASS = "YourPassword"   # Remplace si besoin
-CALLSIGNS = ["Call", "Call"]
-TX_GROUP = "TxEmitersGroup"
+CALLSIGNS = ["Call", "Call"]   #choose the call where you want to send message
+TX_GROUP = "TxEmitersGroup"    #Choose you Tx emiters group where you want to send message
 DAPNET_URL = "https://hampager.de/api/calls"
 
 # =====================================================
 # POSITION OBSERVATEUR
 # =====================================================
-LAT = 48.1173          #You can change for choose your QTH
+LAT = 48.1173          #You can change LAT and LON for choose your QTH
 LON = -1.6778
 ALT = 60  # metres     #Elevation of your QTH
 
@@ -366,4 +366,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
