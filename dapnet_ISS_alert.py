@@ -32,18 +32,18 @@ LOG_FILE = os.path.join(SCRIPT_DIR, "iss_debug.log")
 # =====================================================
 # CONFIG DAPNET
 # =====================================================
-DAPNET_USER = "f4igv"
-DAPNET_PASS = "Idfraa8v2b8k181"   # Remplace si besoin
-CALLSIGNS = ["f4igv", "f5ilb"]
-TX_GROUP = "f-53"
+DAPNET_USER = "YourCall"
+DAPNET_PASS = "YourPassword"   # Remplace si besoin
+CALLSIGNS = ["Call", "Call"]
+TX_GROUP = "TxEmitersGroup"
 DAPNET_URL = "https://hampager.de/api/calls"
 
 # =====================================================
 # POSITION OBSERVATEUR
 # =====================================================
-LAT = 48.1173
+LAT = 48.1173          #You can change for choose your QTH
 LON = -1.6778
-ALT = 60  # metres
+ALT = 60  # metres     #Elevation of your QTH
 
 # =====================================================
 # PARAMETRES PASSE
@@ -366,3 +366,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
