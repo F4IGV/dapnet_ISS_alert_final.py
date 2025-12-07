@@ -7,6 +7,9 @@ The script uses Skyfield for orbital calculations, stores all events in UTC, and
 
 It is designed for amateur radio operators who want to receive ISS alerts directly on their POCSAG pagers via DAPNET.
 
+This script can be automated on Windows using Task Scheduler together with the `.bat` file included in this repository.  
+The user must edit the `.bat` file and specify the full path to the `.py` script so automation works correctly.
+
 ---
 
 ## Features
