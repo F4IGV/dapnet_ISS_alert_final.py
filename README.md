@@ -156,6 +156,62 @@ License
 This project is released for amateur radio experimentation.
 Use at your own responsibility.
 
+# ISS DAPNET Alert Script  
+By F4IGV and ChatGPT  
+ASCII only - POCSAG compatible
+
+This project provides a full Python script that detects upcoming ISS passes and sends real time alerts through the DAPNET pager network.  
+The script uses Skyfield for orbital calculations, stores all events in UTC, and generates DAPNET messages in local time.
+
+---
+
+## Installation
+
+### Clone the repository
+```bash
+git clone https://github.com/your_username/your_repository.git
+cd your_repository
+```
+
+### Install Python dependencies
+```bash
+pip install requests skyfield
+```
+
+### Configure DAPNET credentials
+```python
+DAPNET_USER = "YourCall"
+DAPNET_PASS = "YourPassword"
+CALLSIGNS = ["Call1", "Call2"]
+TX_GROUP   = "YourTxGroup"
+```
+
+### Configure your QTH
+```python
+LAT = 48.1173
+LON = -1.6778
+ALT = 60
+```
+
+### Manual execution
+```bash
+python iss_alert.py
+```
+
+---
+
+## Message examples
+```text
+ISS dans 15 min 20:15 - Azimut 123
+ISS visible 20:30 - Azimut 110 Elevation 45
+ISS zenith 20:32 - Azimut 180 Elevation 78
+ISS fin 20:38 - Azimut 245 Elevation 10
+```
+
+---
+
+
+
 Credits
 
 Developed by F4IGV with assistance from ChatGPT.
